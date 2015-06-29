@@ -1,3 +1,3 @@
 # Calculator
 
-Scientific calculato
+Scientific calculator
