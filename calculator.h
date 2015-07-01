@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+
 namespace Ui {
 class Calculator;
 }
@@ -37,6 +38,8 @@ private slots:
 
     void ClickDot();
     void ClickEquel();
+
+    void showMessage(std::string msg);
 
 
 

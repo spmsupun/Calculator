@@ -1,5 +1,15 @@
 #include "calculator.h"
 #include "ui_calculator.h"
+#include <iostream>
+#include <sstream>
+#include <string>
+//#include "task.h"
+#include "formula.h"
+
+
+#include <QMessageBox>
+
+using namespace std;
 
 Calculator::Calculator(QWidget *parent) :
     QMainWindow(parent),
@@ -75,10 +85,62 @@ void Calculator::ClickDot(){
 
 void Calculator::ClickEquel(){
 
+       // Task Parser;
+
+
+
+
+
+   string CurentText = ui->mainTextBox->text().toStdString();
+
+  // Parser.showMessage("ss");
+
+
+
+  //string* charArray = Parser.stringToArray(CurentText);
+
+
+//    size_t num = 0;
+//    string val = "";
+
+
+
+
+//    for(;num<CurentText.length();num++){
+
+//        val += charArray[num];
+
+
+//    }
+
+//    this->showMessage(val);
+
+
+
+
+
+//    for(int c = 0;c<sizeof(charArray);c++){
+
+//        //
+//        cout<<charArray[c];
+//        cout<<"|";
+//        cout<<c;
+//        cout<<"\n";
+
+//    }
+
+
+
 
 
 }
 
 
+void Calculator::showMessage(string msg){
 
+    QMessageBox msgBox;
+    msgBox.setText(QString::fromStdString(msg));
+    msgBox.exec();
+
+}
 
