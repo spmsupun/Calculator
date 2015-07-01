@@ -1,6 +1,11 @@
 #include "calculator.h"
 #include <QApplication>
-#include "formula.h"
+
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
 
 int main(int argc, char *argv[])
 {
@@ -8,7 +13,7 @@ int main(int argc, char *argv[])
     Calculator w;
     w.show();
 
-    Formula Formula;
+
 
     return a.exec();
 }

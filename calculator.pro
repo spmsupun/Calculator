@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-06-28T19:26:49
+# Project created by QtCreator 2015-07-01T18:05:21
 #
 #-------------------------------------------------
 
@@ -8,17 +8,17 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = calculator
+TARGET = Calculator
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
         calculator.cpp \
-    task.cpp \
-    formula.cpp
+    parser.cpp \
+    task.cpp
 
 HEADERS  += calculator.h \
-    task.h \
-    formula.h
+    parser.h \
+    task.h
 
 FORMS    += calculator.ui

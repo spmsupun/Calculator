@@ -3,8 +3,8 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-//#include "task.h"
-#include "formula.h"
+#include "task.h"
+#include "parser.h"
 
 
 #include <QMessageBox>
@@ -85,7 +85,7 @@ void Calculator::ClickDot(){
 
 void Calculator::ClickEquel(){
 
-       // Task Parser;
+    Parser Parser;
 
 
 
@@ -97,39 +97,25 @@ void Calculator::ClickEquel(){
 
 
 
-  //string* charArray = Parser.stringToArray(CurentText);
+  string* charArray = Parser.stringToArray(CurentText);
 
 
-//    size_t num = 0;
-//    string val = "";
-
-
-
-
-//    for(;num<CurentText.length();num++){
-
-//        val += charArray[num];
-
-
-//    }
-
-//    this->showMessage(val);
+    size_t num = 0;
+    string val = "";
 
 
 
 
+    for(;num<CurentText.length();num++){
 
-//    for(int c = 0;c<sizeof(charArray);c++){
-
-//        //
-//        cout<<charArray[c];
-//        cout<<"|";
-//        cout<<c;
-//        cout<<"\n";
-
-//    }
+        val += charArray[num];
+         this->showMessage(val);
 
 
+    }
+
+
+    this->showMessage(val);
 
 
 

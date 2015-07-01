@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 
-
 namespace Ui {
 class Calculator;
 }
@@ -15,9 +14,6 @@ class Calculator : public QMainWindow
 public:
     explicit Calculator(QWidget *parent = 0);
     ~Calculator();
-
-
-
 
 
 private slots:
@@ -40,8 +36,6 @@ private slots:
     void ClickEquel();
 
     void showMessage(std::string msg);
-
-
 
 private:
     Ui::Calculator *ui;

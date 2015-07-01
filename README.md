@@ -1,3 +1,0 @@
-# Calculator
-
-Scientific calculator
